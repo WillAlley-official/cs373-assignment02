@@ -4,7 +4,17 @@ TARGET = alley_p2
 
 all: alley_p2 test
 
-# test: alley_p2
+test: alley_p2
+	./alley_p2 LLLLL 1111
+	./alley_p2 LLLLL 0000
+	./alley_p2 LLLLL 10101010
+	./alley_p2 LLLLL 01010101
+	./alley_p2 RRRRR 1111
+	./alley_p2 LRLRL 1111
+	./alley_p2 RLRLR 1111
+	./alley_p2 RRLRR 1111
+	./alley_p2 LRLLRL 1111
+	./alley_p2 LLLLL 1111 1002
 
 alley_p2: alley_p2.o
 	$(CC) $(CFLAGS) -o alley_p2 alley_p2.o
